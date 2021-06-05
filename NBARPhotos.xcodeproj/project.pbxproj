@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AE2CBB72266B469F00BE0185 /* NBARPhotosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CBB71266B469F00BE0185 /* NBARPhotosApp.swift */; };
-		AE2CBB74266B469F00BE0185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CBB73266B469F00BE0185 /* ContentView.swift */; };
-		AE2CBB76266B469F00BE0185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBB75266B469F00BE0185 /* Assets.xcassets */; };
-		AE2CBB79266B469F00BE0185 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2CBB78266B469F00BE0185 /* Preview Assets.xcassets */; };
 		AE2CBB84266B46A000BE0185 /* NBARPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CBB83266B46A000BE0185 /* NBARPhotosTests.swift */; };
 		AE2CBB8F266B46A000BE0185 /* NBARPhotosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CBB8E266B46A000BE0185 /* NBARPhotosUITests.swift */; };
+		AE6C96AE266B46F5000E40BD /* NBARPhotosPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C96AB266B46F5000E40BD /* NBARPhotosPicker.swift */; };
+		AE6C96AF266B46F5000E40BD /* NBARPhotosDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C96AC266B46F5000E40BD /* NBARPhotosDataModel.swift */; };
+		AE6C96B0266B46F5000E40BD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6C96AD266B46F5000E40BD /* Launch Screen.storyboard */; };
+		AE6C96B6266B4850000E40BD /* NBARKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6C96B3266B47C9000E40BD /* NBARKit.xcframework */; };
+		AE6C96B7266B4850000E40BD /* NBARKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE6C96B3266B47C9000E40BD /* NBARKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +34,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AE6C96B8266B4850000E40BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE6C96B7266B4850000E40BD /* NBARKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AE2CBB6E266B469F00BE0185 /* NBARPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBARPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2CBB71266B469F00BE0185 /* NBARPhotosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBARPhotosApp.swift; sourceTree = "<group>"; };
-		AE2CBB73266B469F00BE0185 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AE2CBB75266B469F00BE0185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE2CBB78266B469F00BE0185 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE2CBB7A266B469F00BE0185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE2CBB7F266B46A000BE0185 /* NBARPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBARPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2CBB83266B46A000BE0185 /* NBARPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBARPhotosTests.swift; sourceTree = "<group>"; };
@@ -45,6 +58,13 @@
 		AE2CBB8A266B46A000BE0185 /* NBARPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBARPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2CBB8E266B46A000BE0185 /* NBARPhotosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBARPhotosUITests.swift; sourceTree = "<group>"; };
 		AE2CBB90266B46A000BE0185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE6C96AB266B46F5000E40BD /* NBARPhotosPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBARPhotosPicker.swift; sourceTree = "<group>"; };
+		AE6C96AC266B46F5000E40BD /* NBARPhotosDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBARPhotosDataModel.swift; sourceTree = "<group>"; };
+		AE6C96AD266B46F5000E40BD /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		AE6C96B2266B47C9000E40BD /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		AE6C96B3266B47C9000E40BD /* NBARKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NBARKit.xcframework; sourceTree = "<group>"; };
+		AE6C96BB266B4BCC000E40BD /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		AE6C96BD266B4BF2000E40BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6C96B6266B4850000E40BD /* NBARKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +96,13 @@
 		AE2CBB65266B469F00BE0185 = {
 			isa = PBXGroup;
 			children = (
+				AE6C96B1266B47C9000E40BD /* Frameworks */,
+				AE6C96B9266B4BCC000E40BD /* LICENSE */,
 				AE2CBB70266B469F00BE0185 /* NBARPhotos */,
 				AE2CBB82266B46A000BE0185 /* NBARPhotosTests */,
 				AE2CBB8D266B46A000BE0185 /* NBARPhotosUITests */,
 				AE2CBB6F266B469F00BE0185 /* Products */,
+				AE6C96BD266B4BF2000E40BD /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,21 +119,13 @@
 		AE2CBB70266B469F00BE0185 /* NBARPhotos */ = {
 			isa = PBXGroup;
 			children = (
-				AE2CBB71266B469F00BE0185 /* NBARPhotosApp.swift */,
-				AE2CBB73266B469F00BE0185 /* ContentView.swift */,
-				AE2CBB75266B469F00BE0185 /* Assets.xcassets */,
 				AE2CBB7A266B469F00BE0185 /* Info.plist */,
-				AE2CBB77266B469F00BE0185 /* Preview Content */,
+				AE6C96AD266B46F5000E40BD /* Launch Screen.storyboard */,
+				AE2CBB71266B469F00BE0185 /* NBARPhotosApp.swift */,
+				AE6C96AC266B46F5000E40BD /* NBARPhotosDataModel.swift */,
+				AE6C96AB266B46F5000E40BD /* NBARPhotosPicker.swift */,
 			);
 			path = NBARPhotos;
-			sourceTree = "<group>";
-		};
-		AE2CBB77266B469F00BE0185 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				AE2CBB78266B469F00BE0185 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		AE2CBB82266B46A000BE0185 /* NBARPhotosTests */ = {
@@ -130,6 +146,23 @@
 			path = NBARPhotosUITests;
 			sourceTree = "<group>";
 		};
+		AE6C96B1266B47C9000E40BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE6C96B2266B47C9000E40BD /* LICENSE.txt */,
+				AE6C96B3266B47C9000E40BD /* NBARKit.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE6C96B9266B4BCC000E40BD /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				AE6C96BB266B4BCC000E40BD /* LICENSE.txt */,
+			);
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +173,7 @@
 				AE2CBB6A266B469F00BE0185 /* Sources */,
 				AE2CBB6B266B469F00BE0185 /* Frameworks */,
 				AE2CBB6C266B469F00BE0185 /* Resources */,
+				AE6C96B8266B4850000E40BD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE2CBB79266B469F00BE0185 /* Preview Assets.xcassets in Resources */,
-				AE2CBB76266B469F00BE0185 /* Assets.xcassets in Resources */,
+				AE6C96B0266B46F5000E40BD /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE2CBB74266B469F00BE0185 /* ContentView.swift in Sources */,
 				AE2CBB72266B469F00BE0185 /* NBARPhotosApp.swift in Sources */,
+				AE6C96AE266B46F5000E40BD /* NBARPhotosPicker.swift in Sources */,
+				AE6C96AF266B46F5000E40BD /* NBARPhotosDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -402,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -415,10 +449,9 @@
 		AE2CBB94266B46A000BE0185 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NBARPhotos/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = WLPE3F9YYB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NBARPhotos/Info.plist;
@@ -427,6 +460,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.northbronson.NBARPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -437,10 +471,9 @@
 		AE2CBB95266B46A000BE0185 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NBARPhotos/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = WLPE3F9YYB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NBARPhotos/Info.plist;
@@ -449,6 +482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.northbronson.NBARPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

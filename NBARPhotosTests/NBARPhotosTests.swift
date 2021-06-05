@@ -2,8 +2,6 @@
 //  NBARPhotosTests.swift
 //  NBARPhotosTests
 //
-//  Created by Rick Van Voorden on 6/4/21.
-//
 
 import XCTest
 @testable import NBARPhotos

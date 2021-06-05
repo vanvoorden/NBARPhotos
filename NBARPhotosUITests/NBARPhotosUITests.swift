@@ -2,8 +2,6 @@
 //  NBARPhotosUITests.swift
 //  NBARPhotosUITests
 //
-//  Created by Rick Van Voorden on 6/4/21.
-//
 
 import XCTest
 
