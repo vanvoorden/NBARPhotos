@@ -15,6 +15,8 @@ This project requires Xcode 12.5 or later. The following device requirements app
 * Location Services
 * iOS 14.0 or later
 
+The location data required to place photos is limited to specific areas supported by Apple. Reference the [ARGeoTrackingConfiguration](https://developer.apple.com/documentation/arkit/argeotrackingconfiguration) documentation before placing photos in your location.
+
 ## Known Issues
 
 * There is no UI if the user chooses to view a photo with invalid location metadata. The operation will fail silently. If the user chooses multiple photos from the picker, only the photos with valid location metadata will draw in AR.
