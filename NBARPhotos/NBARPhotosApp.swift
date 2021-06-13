@@ -31,6 +31,14 @@ struct NBARPhotosApp : App {
 
 //  MARK: -
 
+extension Bundle {
+  var navigationTitle: String {
+    return ((self.infoDictionary?["CFBundleDisplayName"] as? String ?? "") + " " + (self.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""))
+  }
+}
+
+//  MARK: -
+
 private struct NBARPhotosLaunchView : View {
   //  MARK: -
   var body: some View {
@@ -71,7 +79,7 @@ struct NBARPhotosContentView : View {
         if self.model.anchors.count == 0 {
           NBARPhotosLaunchView(
           ).navigationTitle(
-            "Photos AR 0.1"
+            Bundle.main.navigationTitle
           ).onTapGesture {
             self.requestAuthorization()
           }
@@ -84,7 +92,7 @@ struct NBARPhotosContentView : View {
           ).navigationBarTitleDisplayMode(
             .inline
           ).navigationTitle(
-            "Photos AR 0.1"
+            Bundle.main.navigationTitle
           ).onTapGesture {
             if self.isNavigationBarHidden {
               self.isNavigationBarHidden.toggle()
