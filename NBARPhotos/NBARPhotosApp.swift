@@ -161,7 +161,7 @@ struct NBARPhotosContentView : View {
             }
           ) {
             Label(
-              "Camera",
+              "Photo",
               systemImage: "photo"
             )
           }.disabled(
