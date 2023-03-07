@@ -15,7 +15,7 @@ import NBARKit
 import Photos
 import UIKit
 
-extension NBARPhotosPickerResult : NBARPhotosAnchor {
+extension NBARPhotosPickerResult : NBARPhotosViewAnchor {
   
 }
 
@@ -49,7 +49,7 @@ final class NBARPhotosDataModel : ObservableObject {
 
 extension NBARPhotosDataModel : NBARPhotosViewDataModel {
   //  MARK: -
-  var anchors: Array<NBARPhotosAnchor> {
+  var anchors: Array<NBARPhotosViewAnchor> {
     return Array(self.resultsDictionary.values)
   }
   
@@ -62,11 +62,11 @@ extension NBARPhotosDataModel : NBARPhotosViewDataModel {
     }
   }
   
-  func placeholder(for anchor: NBARPhotosAnchor) -> UIImage? {
+  func placeholder(for anchor: NBARPhotosViewAnchor) -> UIImage? {
     return nil
   }
   
-  func requestImage(for anchor: NBARPhotosAnchor, resultHandler: @escaping (UIImage?, Dictionary<AnyHashable, Any>?) -> Void) -> UUID? {
+  func requestImage(for anchor: NBARPhotosViewAnchor, resultHandler: @escaping (UIImage?, Error?) -> Void) -> UUID? {
     if let result = self.resultsDictionary[anchor.id],
        let asset = PHAsset.fetchAssets(withLocalIdentifiers: [result.asset], options: nil).lastObject {
       let id = UUID()
