@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D67BF2C29B7FA83008B0BA1 /* NBARKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D67BF2B29B7FA83008B0BA1 /* NBARKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1D67BF2D29B7FA91008B0BA1 /* NBARKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D67BF2B29B7FA83008B0BA1 /* NBARKit.xcframework */; };
+		1DF5533729BEA01F000936F5 /* NBARKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5533629BEA01F000936F5 /* NBARKit.xcframework */; };
+		1DF5533829BEA01F000936F5 /* NBARKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5533629BEA01F000936F5 /* NBARKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE2CBB72266B469F00BE0185 /* NBARPhotosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CBB71266B469F00BE0185 /* NBARPhotosApp.swift */; };
 		AE2CBB84266B46A000BE0185 /* NBARPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CBB83266B46A000BE0185 /* NBARPhotosTests.swift */; };
 		AE2CBB8F266B46A000BE0185 /* NBARPhotosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CBB8E266B46A000BE0185 /* NBARPhotosUITests.swift */; };
@@ -41,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1D67BF2C29B7FA83008B0BA1 /* NBARKit.xcframework in Embed Frameworks */,
+				1DF5533829BEA01F000936F5 /* NBARKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D67BF2B29B7FA83008B0BA1 /* NBARKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NBARKit.xcframework; sourceTree = "<group>"; };
+		1DF5533629BEA01F000936F5 /* NBARKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NBARKit.xcframework; sourceTree = "<group>"; };
 		AE2CBB6E266B469F00BE0185 /* NBARPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBARPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2CBB71266B469F00BE0185 /* NBARPhotosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBARPhotosApp.swift; sourceTree = "<group>"; };
 		AE2CBB7A266B469F00BE0185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D67BF2D29B7FA91008B0BA1 /* NBARKit.xcframework in Frameworks */,
+				1DF5533729BEA01F000936F5 /* NBARKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				AE6C96B2266B47C9000E40BD /* LICENSE.txt */,
-				1D67BF2B29B7FA83008B0BA1 /* NBARKit.xcframework */,
+				1DF5533629BEA01F000936F5 /* NBARKit.xcframework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
