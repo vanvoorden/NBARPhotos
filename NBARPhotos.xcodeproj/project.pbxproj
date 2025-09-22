@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DF5533729BEA01F000936F5 /* NBARKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5533629BEA01F000936F5 /* NBARKit.xcframework */; };
-		1DF5533829BEA01F000936F5 /* NBARKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5533629BEA01F000936F5 /* NBARKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D56CC792E820200009BE019 /* NBARKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1D56CC782E820200009BE019 /* NBARKit */; };
 		AE2CBB72266B469F00BE0185 /* NBARPhotosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CBB71266B469F00BE0185 /* NBARPhotosApp.swift */; };
 		AE2CBB84266B46A000BE0185 /* NBARPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CBB83266B46A000BE0185 /* NBARPhotosTests.swift */; };
 		AE2CBB8F266B46A000BE0185 /* NBARPhotosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CBB8E266B46A000BE0185 /* NBARPhotosUITests.swift */; };
@@ -41,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1DF5533829BEA01F000936F5 /* NBARKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1DF5533629BEA01F000936F5 /* NBARKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NBARKit.xcframework; sourceTree = "<group>"; };
+		1D56CC732E8201A3009BE019 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		AE2CBB6E266B469F00BE0185 /* NBARPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBARPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2CBB71266B469F00BE0185 /* NBARPhotosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBARPhotosApp.swift; sourceTree = "<group>"; };
 		AE2CBB7A266B469F00BE0185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,8 +60,6 @@
 		AE6C96AB266B46F5000E40BD /* NBARPhotosPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBARPhotosPicker.swift; sourceTree = "<group>"; };
 		AE6C96AC266B46F5000E40BD /* NBARPhotosDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBARPhotosDataModel.swift; sourceTree = "<group>"; };
 		AE6C96AD266B46F5000E40BD /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		AE6C96B2266B47C9000E40BD /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		AE6C96BB266B4BCC000E40BD /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		AE6C96BD266B4BF2000E40BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DF5533729BEA01F000936F5 /* NBARKit.xcframework in Frameworks */,
+				1D56CC792E820200009BE019 /* NBARKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +92,7 @@
 		AE2CBB65266B469F00BE0185 = {
 			isa = PBXGroup;
 			children = (
-				AE6C96B1266B47C9000E40BD /* Frameworks */,
-				AE6C96B9266B4BCC000E40BD /* LICENSE */,
+				1D56CC732E8201A3009BE019 /* LICENSE.txt */,
 				AE2CBB70266B469F00BE0185 /* NBARPhotos */,
 				AE2CBB82266B46A000BE0185 /* NBARPhotosTests */,
 				AE2CBB8D266B46A000BE0185 /* NBARPhotosUITests */,
@@ -144,23 +139,6 @@
 				AE2CBB90266B46A000BE0185 /* Info.plist */,
 			);
 			path = NBARPhotosUITests;
-			sourceTree = "<group>";
-		};
-		AE6C96B1266B47C9000E40BD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AE6C96B2266B47C9000E40BD /* LICENSE.txt */,
-				1DF5533629BEA01F000936F5 /* NBARKit.xcframework */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		AE6C96B9266B4BCC000E40BD /* LICENSE */ = {
-			isa = PBXGroup;
-			children = (
-				AE6C96BB266B4BCC000E40BD /* LICENSE.txt */,
-			);
-			path = LICENSE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +229,9 @@
 				Base,
 			);
 			mainGroup = AE2CBB65266B469F00BE0185;
+			packageReferences = (
+				1D56CC772E820200009BE019 /* XCRemoteSwiftPackageReference "NBARKit" */,
+			);
 			productRefGroup = AE2CBB6F266B469F00BE0185 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -450,10 +431,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = WLPE3F9YYB;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NBARPhotos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -461,9 +442,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.northbronson.NBARPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -473,10 +455,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = WLPE3F9YYB;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NBARPhotos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -484,9 +466,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.northbronson.NBARPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -616,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D56CC772E820200009BE019 /* XCRemoteSwiftPackageReference "NBARKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vanvoorden/NBARKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D56CC782E820200009BE019 /* NBARKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D56CC772E820200009BE019 /* XCRemoteSwiftPackageReference "NBARKit" */;
+			productName = NBARKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AE2CBB66266B469F00BE0185 /* Project object */;
 }

@@ -1,4 +1,4 @@
-# Photos AR 0.2
+# Photos AR 1.0
 
 This project demonstrates how the `NBARPhotosView` can be used to display any photos with location metadata in an AR space. We request permission to access the user photo library. The user can then choose to share photos and view them in AR at the same coordinates where the photo was geo-tagged.
 
@@ -6,7 +6,7 @@ For best results, the photos should have been taken outdoors with GPS and Wifi e
 
 ## Requirements
 
-This project requires Xcode 12.5 or later. The following device requirements apply:
+This project requires Xcode 15.4 or later. The following device requirements apply:
 
 * ARKit
 * arm64
@@ -22,10 +22,12 @@ The location data required to place photos is limited to specific areas supporte
 * There is no UI if the user chooses to view a photo with invalid location metadata. The operation will fail silently. If the user chooses multiple photos from the picker, only the photos with valid location metadata will draw in AR.
 * Launching the app, loading photos in AR, backgrounding the app for a long period of time, and activating the app back to the foreground can cause the previously loaded photos to disappear. Reloading the photos from the photo picker should place them back in AR space correctly.
 
-## Release Notes
+## License
 
-### 0.2
-* Update SDK to 0.2.
+Copyright 2021 North Bronson Software
 
-### 0.1
-* Initial Release
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
